@@ -13,7 +13,7 @@ probablistic predictions about large, complex and multifaceted problems.
 This repository contains a simple starter project (with gradle build files) providing the boilerplate
 necessary to get started with Keanu.
 
-For more details please see the main Keanu repository
+For more details please see the main Keanu repository [here](https://github.com/improbable-research/keanu).
 
 ## Hiring
 
