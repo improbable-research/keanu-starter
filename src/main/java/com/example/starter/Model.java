@@ -2,6 +2,7 @@ package com.example.starter;
 
 
 import io.improbable.keanu.algorithms.variational.GradientOptimizer;
+import io.improbable.keanu.algorithms.variational.Optimizer;
 import io.improbable.keanu.network.BayesianNetwork;
 import io.improbable.keanu.vertices.dbl.DoubleVertex;
 import io.improbable.keanu.vertices.dbl.probabilistic.GaussianVertex;
@@ -60,8 +61,8 @@ public class Model {
 
         //Find the most probable value for A and B given we've taken a
         //noisy observation of 2.0
-        GradientOptimizer optimizer = new GradientOptimizer(bayesNet);
-        optimizer.maxAPosteriori(5000);
+        Optimizer optimizer = Optimizer.of(bayesNet);
+        optimizer.maxAPosteriori();
 
         //Expose model results
         results = (A.getValue().scalar() + B.getValue().scalar());
