@@ -1,8 +1,7 @@
 package com.example.starter;
 
 
-import io.improbable.keanu.algorithms.variational.GradientOptimizer;
-import io.improbable.keanu.algorithms.variational.Optimizer;
+import io.improbable.keanu.algorithms.variational.optimizer.Optimizer;
 import io.improbable.keanu.network.BayesianNetwork;
 import io.improbable.keanu.vertices.dbl.DoubleVertex;
 import io.improbable.keanu.vertices.dbl.probabilistic.GaussianVertex;
