@@ -1,6 +1,7 @@
 package com.example.starter;
 
 
+import io.improbable.keanu.algorithms.variational.optimizer.KeanuOptimizer;
 import io.improbable.keanu.algorithms.variational.optimizer.Optimizer;
 import io.improbable.keanu.network.BayesianNetwork;
 import io.improbable.keanu.vertices.dbl.DoubleVertex;
@@ -60,7 +61,7 @@ public class Model {
 
         //Find the most probable value for A and B given we've taken a
         //noisy observation of 2.0
-        Optimizer optimizer = Optimizer.of(bayesNet);
+        Optimizer optimizer = KeanuOptimizer.of(bayesNet);
         optimizer.maxAPosteriori();
 
         //Expose model results
