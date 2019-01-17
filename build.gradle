@@ -1,9 +1,22 @@
+buildscript {
+    ext.kotlin_version = '1.3.11'
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
 plugins {
     id 'java'
     id 'application'
 }
 
-mainClassName = "com.example.starter.Model"
+apply plugin: 'kotlin'
+
+mainClassName = "com.example.starter.KotlinMainKt"
 
 group = 'improbable'
 
@@ -20,4 +33,14 @@ dependencies {
 
     //testing
     testCompile 'junit:junit:4.12'
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
