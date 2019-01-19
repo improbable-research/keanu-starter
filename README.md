@@ -8,13 +8,16 @@
 
 ## Setting up
 
-* Open a terminal window and `cd` to where you want the project to be located.
-* Run `git clone https://github.com/improbable-research/keanu-starter.git` to obtain the project.
-* Run `git checkout hack-cambridge-gradlew` to checkout the branch.
-* Run `./gradlew build` to build the starter project.
+1. Install Intellij
+1. Open a terminal window and `cd` to where you want the project to be located.
+1. Run `git clone https://github.com/improbable-research/keanu-starter.git` to obtain the project.
+1. Run `git checkout hack-cambridge-gradlew` to checkout the branch.
 
-You should now be set up!
-To see an example model, run `./gradlew test` which runs `ModelTest.java`.
+You should now be set up! To run an example model:
+
+1. Open the `keanu-starter` folder in Intellij.
+1. Open `keanu-starter/src/main/java/com/example/starter/Model.java`.
+1. Right click the `main` function, and select run.
 
 ## What is Keanu?
 
