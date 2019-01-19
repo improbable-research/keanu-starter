@@ -19,6 +19,8 @@
 1. Open `keanu-starter/src/main/java/com/example/starter/Model.java`.
 1. Right click the `main` function, and select run.
 
+## What is Keanu?
+
 Keanu is a general purpose probabilistic programming library built in Java and developed by Improbable's research team.
 It enables you to build Bayesian networks through which you can make
 probablistic predictions about large, complex and multifaceted problems.
