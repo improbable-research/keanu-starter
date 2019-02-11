@@ -1,6 +1,6 @@
 package com.example.starter
 
-import io.improbable.keanu.algorithms.variational.optimizer.KeanuOptimizer
+import io.improbable.keanu.Keanu
 import io.improbable.keanu.network.BayesianNetwork
 import io.improbable.keanu.vertices.dbl.probabilistic.GaussianVertex
 import java.util.*
@@ -47,7 +47,7 @@ class KotlinModel(var data: KotlinData) {
 
         //Find the most probable value for A and B given we've taken a
         //noisy observation of 2.0
-        val optimizer = KeanuOptimizer.of(bayesNet)
+        val optimizer = Keanu.Optimizer.of(bayesNet)
         optimizer.maxAPosteriori()
 
         //Expose model results
