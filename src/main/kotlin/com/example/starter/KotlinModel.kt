@@ -2,7 +2,7 @@ package com.example.starter
 
 import io.improbable.keanu.Keanu
 import io.improbable.keanu.network.BayesianNetwork
-import io.improbable.keanu.vertices.dbl.probabilistic.GaussianVertex
+import io.improbable.keanu.vertices.tensor.number.floating.dbl.probabilistic.GaussianVertex
 import java.util.*
 
 /**
